@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			My to-do list.
+		</title>
+
+		<style type="text/css">
+
+			.main_body{
+				background-color: rgb(48, 59, 72);
+				width: 400px;
+				height: fit-content;
+				padding: 10px 20px 20px 20px;
+				font-family: arial, helvetiva, sans-serif;
+			}
+
+			.white_text{
+				color: white;
+			}
+			
+			#list_body{
+				margin: 5px;
+			}
+
+			.todo_type{
+				text-decoration: underline;
+			}
+
+			li{
+				padding-top: 1px;
+				padding-bottom: 1px;
+			}
+
+			.inprogress_task{
+				color: limegreen;
+			}
+
+			.completed_task{
+				color: orangered;
+				text-decoration: line-through;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div class="main_body">
+
+			<h1 class="white_text">My To-Do List</h1>
+
+			<div id="list_body">
+
+				<h2 class="todo_type white_text">Chores</h2>
+				<ul class="todo_task">
+					<li class="inprogress_task">Load the dishwasher</li>
+					<li class="inprogress_task">Vacuum the living room</li>
+					<li class="inprogress_task">Take out the garbage</li>
+					<li class="completed_task">Sweep the garage</li>
+				</ul>
+
+				<h2 class="todo_type white_text">Home work</h2>
+				<ul class="todo_task">
+					<li class="inprogress_task">Brainstorm ideas for Science project</li>
+					<li class="inprogress_task">Finish Calculus 2 problems</li>
+					<li class="inprogress_task">Study for Programming midterm :p</li>
+					<li class="completed_task">Find sources for Biology research paper</li>
+					<li class="inprogress_task">Read first two chapters of the Art of War</li>
+				</ul>
+
+				<h2 class="todo_type white_text">Party</h2>
+				<ul class="todo_task">
+					<li class="inprogress_task">Send out invitations</li>
+					<li class="inprogress_task">Reserve party room at a restaurant</li>
+					<li class="inprogress_task">Order the cake!!!</li>
+				</ul>
+
+			</div>
+			
+		</div>
+
+	</body>
+</html>

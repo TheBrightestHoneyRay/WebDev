@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body{
+                background: rgb(0, 35, 102);
+                padding: 10% 10% 10% 10%;
+                color: gold;
+                text-align: center;
+            }
+
+            #inner_body{
+                border: 5px groove gold;
+                height: 700px;
+                margin: auto;
+                padding: 5% 5% 5% 5%;
+            }
+
+            #invite{
+                margin: auto;
+                position: relative;
+                top: 10%;
+            }
+
+            #invitees{
+                font-family: cursive;
+                font-style: italic;
+                font-weight: lighter;
+                font-size: 80%;
+            }
+
+             #invite_hosts{  
+                margin: auto;              
+                width: fit-content;
+                position: relative;
+                top: 20px;
+                font-family: gils sans, sans-serif;
+                letter-spacing: 2px;
+                font-size: 170%;
+                text-transform: uppercase;
+            }
+
+            span{
+                font-family: cursive;
+                font-style: italic;
+                font-weight: lighter;
+                font-size: 50%;
+                text-transform: lowercase;
+            }
+
+            #invite_cont{
+                position: relative;
+                top: 40px;
+                font-family: cursive;
+                font-style: italic;
+                font-weight: lighter;
+                font-size: 80%;
+            }
+
+            #invite_info{
+                margin: auto;
+                position: relative;
+                top: 300px;
+                width: 80%;
+                font-size: 70%;
+                font-family: gils sans, sans-serif;
+                text-transform: uppercase;
+            }
+            
+            #invite_date{
+                border-right: solid gold;
+            }
+
+            #invite_time{
+                border-left: solid gold;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+
+        <div id="inner_body">
+            <div id="invite">
+                <p id="invitees">Together with families</p>
+                <h2 id="invite_hosts">Suzanne<br><span>and</span><br>Anthony</h2>
+                
+                <p id="invite_cont">Cordially invite you to join them at the celebraition of their marriage</p>
+
+            </div>
+            
+            <!--
+            <div id="invite_info">
+                <div id="invite_date">
+                    <p class="numbers">24th</p>
+                    <p>sunday</p>
+                    <p>november</p>
+                </div>
+                
+                <div id="invite_loc">
+                    <p>the crystal gardens</p>
+                    <p>golden avenue 123</p>
+                    
+                    <p>chicago, ilinois</p>
+                </div>
+                
+                 <div id="invite_time">
+                    <p class="numbers">2:00</p>
+                    <p>in the afternoon</p>
+                </div>
+                
+            </div>
+            -->
+
+            <table id="invite_info">
+                <tbody>
+                    <tr>
+                        <td id="invite_date">
+                            <p class="numbers">24th</p>
+                            <p>sunday</p>
+                            <p>november</p>
+                        </td>
+
+                        <td id="invite_loc">
+                            <p>the crystal gardens</p>
+                            <p>golden avenue 123</p>
+                    
+                            <p>chicago, ilinois</p>
+                        </td>
+
+                        <td id="invite_time">
+                            <p class="numbers">2:00</p>
+                            <p>in the afternoon</p>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        
+    </body>
+</html>
