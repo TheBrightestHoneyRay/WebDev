@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loops: Output Prime Numbers</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let interval = prompt("Enter a number", '10');
+
+
+
+		for(let i = 0; i <= interval; i++){
+			isNPrime : if(i != 1 && i != 0){
+				for(let j = 2; j < i; j++){
+					if (i % j == 0) {
+						break isNPrime;
+					}
+				}
+				alert(i);
+			}
+
+		}
+	</script>
+</body>
+</html>

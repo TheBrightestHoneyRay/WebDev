@@ -1,0 +1,40 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <div id="shop_cont"*ngIf="product.category === category?.name">
+    <img class="shop_cont_item" [attr.src]="product.pic">
+    <div id="cont_details" class="shop_cont_item">
+      <h3>
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]"
+        >
+          {{ product.name }}
+        </a>
+      </h3>
+
+      <div id="rating_cont">
+        <ngb-rating [max]="5" [(rate)]="product.rating" [readonly]="false"></ngb-rating>
+
+        <button (click)="like(product)">Like | {{product.like}}</button>
+      </div>
+
+      
+      <p *ngIf="product.description">Description: {{ product.description }}</p>
+
+      <div id="social_buttons">
+        <a href='whatsapp://send?text="product.url"' data-action="share/whatsapp/share" target="_blank">
+          <button type="button">Share</button>
+        </a>
+  
+        <app-product-alerts [product]="product" (notify)="onNotify()">
+        </app-product-alerts></div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

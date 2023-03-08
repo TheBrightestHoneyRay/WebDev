@@ -1,0 +1,174 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.container{
+    width: 100%;
+    height: 719px;
+
+    background-color: rgb(240, 242, 245);
+
+    line-height: 1.15;
+}
+
+.main_sect{
+    margin: auto;
+    width: 974px;
+    height: 410px;
+
+    position: relative;
+    top: 131px;
+
+    display: flex;
+    align-items: center;
+}
+
+.greeting_cont{
+    width: 463px;
+
+    padding-right: 115px;
+
+    font-size: 30px;
+}
+
+.facebook_name_img{
+    width: 270px;
+    height: 48px;
+
+    margin: 0px;
+    margin-left: -25px;
+
+    object-fit: cover;
+}
+
+.greeting_text{
+    margin-top: 10px;
+}
+
+.border_style{
+    border: 1px solid rgb(191, 195, 200);
+}
+
+.form_cont{
+    width: 396px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form_box{
+    padding: 17px 17px 17px 17px;
+    height: 350px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_item{
+    height: 50px;
+    margin: 5px 0px;
+    border-radius: 5px;
+
+    font-size: 17px;
+}
+
+input{
+    padding: 0px 10px 0px 10px;
+}
+
+input:hover{
+    border: 1px solid #1877f2;
+}
+
+input:hover::placeholder{
+    color: rgb(191, 195, 200);
+}
+
+.filling_data{
+    display: flex;
+    flex-direction: column;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    background-color: #1877f2;
+    color: white;
+}
+
+button[type="button"]{
+    margin: auto;
+    width: 233px;
+
+    background-color: #35A520;
+    color: white;
+}
+
+a.flex_item{
+    font-size: 15px;
+    text-decoration: none;
+    color: #1877f2;
+    text-align: center;
+    padding: 15px 15px 0px 15px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    border-top: 1px solid #90949c;
+    margin: 10px 0px;
+}
+
+.verified_acc{
+    font-size: 15px;
+    text-align: center;
+}
+
+footer{
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    line-height: 1.5;
+
+}
+
+.extra_info{
+    margin: auto;
+    padding: 0px;
+    width: 974px;
+    height: 410px;
+}
+
+ul{
+    padding: 0px;
+}
+
+li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.plus_button{
+    padding: 2px;
+    border: 1px solid rgb(115, 115, 115);
+    background-color: #dfe3ee;
+}
+
+.plus_button img{
+    width: 15px;
+    height: 12px;
+    object-fit: scale-down;
+}

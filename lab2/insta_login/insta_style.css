@@ -1,0 +1,161 @@
+*{
+	box-sizing: content-box;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.red_border{
+	border: 1px solid red;
+}
+
+body{
+	margin: auto;
+	text-align: center;
+}
+
+.container{
+	margin: auto;
+	width: 761px;
+	display: flex;
+	flex-direction: row;
+
+	position: relative;
+	top: 159px;
+}
+
+.insta_page{
+	padding-right: 30px;
+}
+
+.sub_content{
+	font-size: 12px;
+}
+
+.sub_content_bigger{
+	color: #375184;
+	font-size: 14px;
+}
+
+.insta_page_img{
+	width: 380px;
+}
+
+.sub_container{
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sub_container_item{
+	margin-top: 10px;
+}
+
+.card{
+	border: 1px solid rgb(142, 142, 142);
+}
+
+.login{
+	height: 401px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.login_item{
+	margin: 8px 16px 0px 16px;
+	height: 38px;
+}
+
+img.login_img{
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	width: calc(350px * 0.5);
+	height: 50px;
+}
+
+input{
+	padding: 0px 7px 0px 7px;
+	border: 1px solid #979797;
+	border-radius: 3px;
+}
+
+button{
+	border: 1px solid #67b6fa;
+	border-radius: 10px;
+
+	background-color: #67b6fa;
+
+	color: white;
+}
+
+.line{
+	height: 0px;
+	border-top: 1px solid rgb(142, 142, 142);
+}
+
+.d_lined{
+	color:#979797;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.d_lined_item{
+	width: calc(350px * 0.3);
+}
+
+a.sub_content{
+	color: #375184;
+}
+
+.login_form{
+	margin: 16px 16px 0px 16px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sign_up{
+	font-size: 15px;
+	height: 58px;
+}
+
+.registration_link{
+	color: #0195F6;
+	font-size: 14px;
+}
+
+.app_store{
+	font-size: 14px;
+}
+
+.app_store_item{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.app_store_img{
+	width: 278px;
+}
+
+footer{
+	width: 1300px;
+
+	margin: auto;
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    line-height: 1.5;
+
+	position: relative;
+	top: 300px;
+
+}
+
+ul{
+    padding: 0px;
+}
+
+li{
+    display: inline;
+    margin-right: 20px;
+}

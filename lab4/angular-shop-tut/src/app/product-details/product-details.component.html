@@ -1,0 +1,13 @@
+<h2>Product Details</h2>
+
+<div id="purchase_cont" *ngIf="product">
+  <img [attr.src]="product.pic">
+    
+  <div id="purchase_info">
+    <h3><a [attr.href]="product.url">{{ product.name }}</a></h3>
+    <ngb-rating [max]="5" [(rate)]="product.rating" [readonly]="false"></ngb-rating>
+    <h4>{{ product.price | currency }}</h4>
+    <p>{{ product.description }}</p>
+    <button type="button" (click)="addToCart(product)">Buy</button>
+  </div>
+</div>

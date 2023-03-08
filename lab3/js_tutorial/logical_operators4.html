@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Logical Operator</title>
+</head>
+<body>
+	<script>
+		let login = prompt("Enter login", "");
+
+		if(login == "Admin"){
+			let password = prompt("Enter password", "");
+
+			if(password == "TheMaster" || password == null){
+				alert("Welcome!");
+			}
+			else if(password == ""){
+				alert("Canceled");
+			}
+			else{
+				alert("Wrong password");
+			}
+		}
+		else if(login == "" || login == null){
+			alert("Canceled");
+		}
+		else{
+			alert("I don't know you");
+		}
+	</script>
+</body>
+</html>

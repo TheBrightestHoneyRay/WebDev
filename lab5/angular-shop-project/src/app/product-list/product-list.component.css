@@ -1,0 +1,27 @@
+*{
+    margin: 5px;
+}
+
+#shop_cont{
+    border: solid 1px blue;
+    margin: 30px 5px;
+    padding: 5px 0px;
+    width: 95%;
+    display: flex;
+}
+
+
+img{
+    width: 20em;
+    height: 15em;
+    object-fit: contain;
+}
+
+#cont_details{
+    width: 100%;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

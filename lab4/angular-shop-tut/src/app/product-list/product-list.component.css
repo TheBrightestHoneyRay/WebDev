@@ -1,0 +1,19 @@
+img {
+
+  width: 5rem;
+  height: 10rem;
+  object-fit: contain;
+}
+
+
+img,
+#prod_info {
+  margin: 5px;
+}
+
+#product_cont {
+  margin: 10px 5px;
+
+  display: flex;
+}
+

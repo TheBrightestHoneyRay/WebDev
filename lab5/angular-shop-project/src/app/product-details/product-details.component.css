@@ -1,0 +1,14 @@
+#descrip_content{
+    width: 95%;
+    display: flex;
+}
+
+.descrip_cont_item{
+    margin: 10px;
+}
+
+img{
+    width: 30em;
+    height: 25em;
+    object-fit: contain;
+}

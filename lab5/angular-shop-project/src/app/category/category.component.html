@@ -1,0 +1,8 @@
+<h2>Categories</h2>
+
+<div id="category_cont" *ngFor="let category of categories">
+    <a [title]="category.name + ' details'"
+    [routerLink]="['productitems', category.name]">
+        {{category.name}}
+    </a>
+</div>

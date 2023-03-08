@@ -1,0 +1,22 @@
+img {
+  border: red 1px solid;
+
+  width: 5rem;
+  height: 10rem;
+  object-fit: contain;
+}
+
+#prod_info {
+  border: 1px solid blue;
+}
+
+img,
+#prod_info {
+  margin: 5px;
+}
+
+#product_cont {
+  border: 1px solid orange;
+  margin: 5px;
+  display: flex;
+}
