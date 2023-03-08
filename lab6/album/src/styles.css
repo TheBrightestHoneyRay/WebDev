@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0px;
+}
+
+ul
+{
+    padding: 5px;
+    list-style-type: none;
+}
+
+li{
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between
+}
+
+button{
+    padding: 5px;
+    height: fit-content;
+}
+
+h2
+{
+    border: 1px solid blue;
+    margin: 5px 0px;
+}
+
+.padding-setting{
+    margin: auto;
+    padding: 0px 20px;
+    width: 70%;
+}
+
+.capitalized-first-letter::first-letter
+{
+    text-transform: capitalize;
+}
+
+.interactive-bar{
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+.go-back{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+
+.separ{
+    border-right: solid lightgray 1px;
+}
+
+#photos-list{
+
+    border: 1px solid blue;
+
+    padding: 0px;
+    width: fit-content;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+img{
+    width: 200px;
+}
+
+
+#photos-cont{
+
+    border: 1px solid red;
+
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms{
+
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title-change-item{
+    margin: 5px;
+    padding: 5px;
+}
+
+input{
+    width: 70%;
+}
+
+.title-change-item::placeholder{
+    color: black;
+}
+
+.detail-cont-item{
+    margin: 10px 0px;
+}

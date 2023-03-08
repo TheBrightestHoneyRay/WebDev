@@ -1,0 +1,8 @@
+<app-interactive-bar></app-interactive-bar>
+
+<div id="photos-list" class="padding-setting" >
+    <div id="photos-cont" *ngFor="let photo of albumPhotos">
+        {{photo.id}}
+        <img [attr.src]="photo.url">
+    </div>
+</div>

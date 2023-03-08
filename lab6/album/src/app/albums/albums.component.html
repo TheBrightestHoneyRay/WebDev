@@ -1,0 +1,15 @@
+<div id="albums-list-page" class="padding-setting">
+    <h3>Albums</h3>
+    
+    <fieldset id="new-post" class="forms">
+        <input type="text" placeholder="New Album Title" [(ngModel)]="newAlbum.title"><br/>
+        <button (click)="addAlbum()">Add post</button>
+    </fieldset>
+
+    <ul id="list-of-albums">
+        <li id="albums-brief-cont" *ngFor="let album of albums">
+            <a [routerLink]="['/albums', album.id]" class="capitalized-first-letter">{{album.id}}) <span class="capitalized-first-letter">{{album.title}}</span></a>
+            <button type="button" (click)="deleteAlbum(album.id)">Remove album</button>
+        </li>
+    </ul>
+</div>

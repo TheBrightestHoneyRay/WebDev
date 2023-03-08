@@ -1,0 +1,14 @@
+<div id="detail-cont" class="padding-setting">
+    <app-interactive-bar></app-interactive-bar>
+    <div *ngIf="loaded">
+        <h3 class="detail-cont-item">Album #{{album.id}}</h3>
+        <fieldset id="title-change" class="detail-cont-item forms">
+            <label for="title">Title (changable)</label>
+            <input name="title" class="title-change-item" [value]="album.title" [placeholder]="album.title" [(ngModel)]="newTitle">
+            <button class="title-change-item" type="button" (click)="changeTitle()">Save</button>
+        </fieldset>
+
+        <p>{{album.title}}</p>
+        <a class="detail-cont-item" routerLink="/albums/:id/photos">Photos</a>
+    </div>
+</div>
