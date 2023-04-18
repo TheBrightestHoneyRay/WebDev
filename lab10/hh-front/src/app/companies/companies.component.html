@@ -1,0 +1,12 @@
+<div class="cont">
+  <fieldset>
+    <label>Company name:</label>
+    <input type="text" [(ngModel)]="newCompany">
+    <button (click)="addCompany()">Add company</button>
+  </fieldset>
+
+  <h3>Companies</h3>
+  <ul *ngFor="let company of companies">
+    <li><a [routerLink]="['/companies', company.id]">{{company.name}}</a></li>
+  </ul>
+</div>
