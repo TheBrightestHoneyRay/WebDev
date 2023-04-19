@@ -1,6 +1,10 @@
 <div class="cont">
   <h3>Vacancies</h3>
+
   <ul *ngFor="let vacancy of vacancies">
-    <li>{{vacancy.name}}</li>
+    <li>
+      <p>{{vacancy.name}}</p>
+      <button (click)="deleteVacancy(vacancy.id)">Delete</button>
+    </li>
   </ul>
 </div>

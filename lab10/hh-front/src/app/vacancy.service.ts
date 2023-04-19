@@ -13,4 +13,9 @@ export class VacancyService {
   getCompanyVacancies(id: number): Observable<Vacancy[]>{
     return this.httpClient.get<Vacancy[]>(`http://127.0.0.1:8000/api/companies/${id}/vacancies`)
   }
+
+  deleteVacancy(id: number): Observable<Vacancy>{
+    return this.httpClient.delete<Vacancy>(`http://127.0.0.1:8000/api/vacancies/${id}`)
+  }
+
 }

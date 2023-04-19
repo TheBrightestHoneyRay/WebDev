@@ -10,21 +10,36 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class VacanciesComponent implements OnInit{
   vacancies: Vacancy[];
+  company_id: number=NaN;
+  newName: string='';
+  newDescription: string='';
+  newSalary: number=NaN;
 
   constructor(private route: ActivatedRoute,private vacancyService: VacancyService) {
     this.vacancies = []
   }
 
   ngOnInit(): void{
+    this.getVacancies()
+
+  }
+
+  getVacancies():void{
     this.route.paramMap.subscribe((params) =>{
       let _id = params.get('id');
       if(_id){
         let id = +_id;
         this.vacancyService.getCompanyVacancies(id).subscribe((vacancies) =>{
-          this.vacancies = vacancies
+            this.vacancies = vacancies
           }
         )
       }
     });
   }
+
+  deleteVacancy(id: number):void{
+    this.vacancyService.deleteVacancy(id).subscribe((vacancy) =>{})
+    this.getVacancies()
+  }
+
 }
